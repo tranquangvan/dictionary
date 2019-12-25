@@ -1,6 +1,5 @@
 package Dictionary2;
 
-import Dictionary.Dictionary;
 
 import javax.swing.*;
 import java.awt.*;

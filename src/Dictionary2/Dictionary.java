@@ -5,14 +5,15 @@ import java.io.FileOutputStream;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.util.TreeMap;
+import java.util.Vector;
 
 public class Dictionary {
     private static boolean modified = false;
     private static String dictionaryfile;
     private static String message = "";
-    private static TreeMap<String, String> words =
-            new TreeMap<String, String>();
-
+    private static Vector<String> details;
+    private static TreeMap<String, Vector<String>> words =
+            new TreeMap<String, Vector<String>>();
     static {
         // get currency directory
         dictionaryfile = System.getProperty("user.dir") +
@@ -31,22 +32,22 @@ public class Dictionary {
         Dictionary.message = message;
     }
 
-    public static TreeMap<String, String> getWords() {
+    public static TreeMap<String, Vector<String>> getWords() {
         return words;
     }
 
-    public static void setWords(TreeMap<String, String> words) {
+    public static void setWords(TreeMap<String, Vector<String>> words) {
         Dictionary.words = words;
         modified = true;
     }
 
-    public static String searchWord(String word) {
+    public static Vector<String> searchWord(String word) {
 
         return words.get(word);
     }
 
-    public static void addWord(String word, String meaning) {
-        words.put(word, meaning);
+    public static void addWord(String word, Vector<String> detail) {
+        words.put(word, detail);
         modified = true;
     }
 
@@ -82,7 +83,7 @@ public class Dictionary {
         try {
             FileInputStream fs = new FileInputStream(dictionaryfile);
             ObjectInputStream is = new ObjectInputStream(fs);
-            words = (TreeMap<String,String>) is.readObject();
+            words = (TreeMap<String,Vector<String>>) is.readObject();
             is.close();
             fs.close();
             modified = false;

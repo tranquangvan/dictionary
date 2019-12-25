@@ -12,12 +12,18 @@ public class ListWords extends JFrame {
         Vector<String> headings = new Vector<>();
         headings.add("Word");
         headings.add("Meaning");
+        headings.add("Noun");
+        headings.add("Verb");
+        headings.add("Transcribe:");
         Vector<Vector<String>> rows = new Vector<>();
-        TreeMap<String,String> words = Dictionary.getWords();
+        TreeMap<String,Vector<String>> words = Dictionary.getWords();
         for (String word : words.keySet()){
             Vector<String> row = new Vector<>();
             row.add(word);
-            row.add(words.get(word));
+           row.add(words.get(word).get(1));
+            row.add(words.get(word).get(2));
+            row.add(words.get(word).get(3));
+            row.add(words.get(word).get(4));
             rows.add(row);
         }
         JTable wordsTable = new JTable(rows,headings);
