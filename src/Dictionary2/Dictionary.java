@@ -4,16 +4,17 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.TreeMap;
-import java.util.Vector;
 
 public class Dictionary {
     private static boolean modified = false;
     private static String dictionaryfile;
     private static String message = "";
-    private static Vector<String> details;
-    private static TreeMap<String, Vector<String>> words =
-            new TreeMap<String, Vector<String>>();
+    private static MyVector<String> details;
+    private static HashMap<String, MyVector<String>> words =
+            new HashMap<>();
     static {
         // get currency directory
         dictionaryfile = System.getProperty("user.dir") +
@@ -32,21 +33,21 @@ public class Dictionary {
         Dictionary.message = message;
     }
 
-    public static TreeMap<String, Vector<String>> getWords() {
+    public static Map<String, MyVector<String>> getWords() {
         return words;
     }
 
-    public static void setWords(TreeMap<String, Vector<String>> words) {
+    public static void setWords(HashMap<String, MyVector<String>> words) {
         Dictionary.words = words;
         modified = true;
     }
 
-    public static Vector<String> searchWord(String word) {
+    public static MyVector<String> searchWord(String word) {
 
         return words.get(word);
     }
 
-    public static void addWord(String word, Vector<String> detail) {
+    public static void addWord(String word, MyVector<String> detail) {
         words.put(word, detail);
         modified = true;
     }
@@ -83,7 +84,7 @@ public class Dictionary {
         try {
             FileInputStream fs = new FileInputStream(dictionaryfile);
             ObjectInputStream is = new ObjectInputStream(fs);
-            words = (TreeMap<String,Vector<String>>) is.readObject();
+            words = (HashMap<String, MyVector<String>>) is.readObject();
             is.close();
             fs.close();
             modified = false;
@@ -92,6 +93,5 @@ public class Dictionary {
             message = ex.getMessage();
             return false;
         }
-
     }
 }

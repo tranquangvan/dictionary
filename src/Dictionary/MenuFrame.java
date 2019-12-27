@@ -12,7 +12,7 @@ public class MenuFrame extends JFrame {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         JMenuBar mb = new JMenuBar();
         // create menu
-        JMenu mnuDictionary = new JMenu("Dictionary123");
+        JMenu mnuDictionary = new JMenu("Dictionary");
         mb.add(mnuDictionary);
 
         // options in Dictionary Menu

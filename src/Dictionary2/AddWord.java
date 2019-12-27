@@ -3,7 +3,6 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.util.Vector;
 
 public class AddWord extends JFrame {
     JTextField tfWord;
@@ -30,7 +29,7 @@ public class AddWord extends JFrame {
                                       @Override
                                       public void actionPerformed(ActionEvent e) {
                                           if (  tfWord.getText().length() > 0 && taMeaning.getText().length() > 0 && tfNoun.getText().length() > 0&& tfVerb.getText().length() > 0&& tfTranscribe.getText().length() > 0 ) {
-                                              Vector<String> details = new Vector<>();
+                                              MyVector<String> details = new MyVector<>();
                                               details.add(tfWord.getText());
                                               details.add(taMeaning.getText());
                                               details.add(tfNoun.getText());

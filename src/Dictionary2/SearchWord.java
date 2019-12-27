@@ -31,7 +31,7 @@ public class SearchWord extends JFrame {
                                          @Override
                                          public void actionPerformed(ActionEvent e) {
                                              if (  tfWord.getText().length() > 0 ) {
-                                                 Vector<String> details = Dictionary.searchWord(tfWord.getText());//fix o day
+                                                 MyVector<String> details = Dictionary.searchWord(tfWord.getText());//fix o day
                                                  if ( details.size() != 0){
                                                      taMeaning.setText(String.valueOf(details.get(1)));//fix o day
                                                  tfNoun.setText(String.valueOf(details.get(2)));//fix o day
