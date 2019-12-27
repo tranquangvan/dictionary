@@ -6,7 +6,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class MenuFrame extends JFrame {
-    private static final long serialVersionUID = 1L;
+
     public MenuFrame() throws Exception {
         super("Dictionary");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -22,7 +22,6 @@ public class MenuFrame extends JFrame {
         option.setAccelerator( KeyStroke.getKeyStroke("F5"));
         mnuDictionary.add(option);
         option.addActionListener(new ActionListener() {
-
             @Override
             public void actionPerformed(ActionEvent e) {
                 addWord();
@@ -72,6 +71,19 @@ public class MenuFrame extends JFrame {
                 listWords();
             }
         });
+        option = new JMenuItem("Play Games");
+        ImageIcon iconPlayGame = new ImageIcon("C:\\Users\\Huy Coc\\Pictures\\list.gif");
+        option.setIcon( iconList);
+        option.setAccelerator( KeyStroke.getKeyStroke("F8"));
+        mnuDictionary.add(option);
+        option.addActionListener(new ActionListener() {
+
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                playGame();
+            }
+        });
+
 
 //        mnuDictionary.addSeparator();
 
@@ -147,6 +159,12 @@ public class MenuFrame extends JFrame {
         w.setVisible(true);
         centerToParent(MenuFrame.this, w);
     }
+    public void playGame() {
+        PlayGame w = new PlayGame("Play Game");
+        w.setVisible(true);
+        centerToParent(MenuFrame.this, w);
+    }
+
 
     public void addToolbar() {
         JToolBar tb = new JToolBar();
@@ -176,6 +194,20 @@ public class MenuFrame extends JFrame {
             }
 
         });
+        ImageIcon iconDelete1 = new ImageIcon("C:\\Users\\Huy Coc\\Pictures\\delete.gif");
+        b = new JButton();
+        b.setIcon(iconDelete);
+        b.setPreferredSize( new Dimension(32,32));
+        tb.add(b);
+        b.setToolTipText("Play Games");
+        b.addActionListener( new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                playGame();
+            }
+
+        });
+
         ImageIcon iconSearch = new ImageIcon("C:\\Users\\Huy Coc\\Pictures\\search.gif");
         b = new JButton();
         b.setIcon(iconSearch);
@@ -281,11 +313,8 @@ public class MenuFrame extends JFrame {
                 }
             }
         });
-
         mb.add(mnuStorage);
-
     }
-
     public static void main(String[] args) throws Exception {
         MenuFrame f = new MenuFrame();
         f.setVisible(true);

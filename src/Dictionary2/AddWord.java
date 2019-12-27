@@ -45,7 +45,7 @@ public class AddWord extends JFrame {
                                               tfWord.requestFocus();
                                           }
                                           else {
-                                              JOptionPane.showMessageDialog( AddWord.this, "Please enter word and meaning!","Add Word", JOptionPane.ERROR_MESSAGE);
+                                              JOptionPane.showMessageDialog( AddWord.this, "Please enter all fields!","Add Word", JOptionPane.ERROR_MESSAGE);
                                               tfWord.requestFocus();
                                           }
                                       }

@@ -8,8 +8,6 @@ import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.util.HashMap;
-import java.util.Map;
-import java.util.TreeMap;
 import java.util.Vector;
 
 public class ListWords extends JFrame {
@@ -65,6 +63,9 @@ public class ListWords extends JFrame {
         btnAdd = new Button("Add in List");
         btnDelete = new Button("Delete element");
         btnUpdate = new Button("Update element");
+        btnAdd.setBackground(Color.CYAN);
+        btnDelete.setBackground(Color.CYAN);
+        btnUpdate.setBackground(Color.CYAN);
         wordsTable.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
@@ -89,7 +90,7 @@ public class ListWords extends JFrame {
                     details.add(txt4.getText());
                     Dictionary.addWord(txt1.getText(), details);
                     Dictionary.saveToDisk();
-                    JOptionPane.showMessageDialog( ListWords.this, "Added Word Successfully!","Add Word", JOptionPane.INFORMATION_MESSAGE);
+                    JOptionPane.showMessageDialog( ListWords.this, "Added Word Successfully!","List Word", JOptionPane.INFORMATION_MESSAGE);
                     txt1.setText("");
                     taMeaning.setText("");
                     txt2.setText("");
@@ -99,7 +100,54 @@ public class ListWords extends JFrame {
                    setVisible(false);
                 }
                 else {
-                    JOptionPane.showMessageDialog( ListWords.this, "Please enter word and meaning!","Add Word", JOptionPane.ERROR_MESSAGE);
+                    JOptionPane.showMessageDialog( ListWords.this, "Please enter word and meaning!","List Word", JOptionPane.ERROR_MESSAGE);
+                    txt1.requestFocus();
+                }
+            }
+        });
+        btnDelete.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                if (  txt1.getText().length() > 0 ) {
+                    boolean done = Dictionary.deleteWord(txt1.getText());
+                    //Dictionary.saveToDisk();
+                    setVisible(false);
+                    if (!done)
+                        JOptionPane.showMessageDialog( ListWords.this, "Word  Not Found. Please try again!","Delete Word", JOptionPane.INFORMATION_MESSAGE);
+                    else
+                        JOptionPane.showMessageDialog( ListWords.this, "Word  Deleted Successfully!","Delete Word", JOptionPane.INFORMATION_MESSAGE);
+                }
+                else
+                    JOptionPane.showMessageDialog( ListWords.this, "Please enter word from dictionary!","Delete Word", JOptionPane.ERROR_MESSAGE);
+            }
+        });
+        btnUpdate.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                if (  txt1.getText().length() > 0 && taMeaning.getText().length() > 0 && txt2.getText().length() > 0&& txt3.getText().length() > 0&& txt4.getText().length() > 0 ) {
+                    MyVector<String> details = new MyVector<>();
+                    details.add(txt1.getText());
+                    details.add(taMeaning.getText());
+                    details.add(txt2.getText());
+                    details.add(txt3.getText());
+                    details.add(txt4.getText());
+                    boolean done = Dictionary.deleteWord(txt1.getText());
+                    if (done){
+                    Dictionary.addWord(txt1.getText(), details);
+                    Dictionary.saveToDisk();
+                    JOptionPane.showMessageDialog( ListWords.this, "Update Word Successfully!","List Word", JOptionPane.INFORMATION_MESSAGE);
+                    txt1.setText("");
+                    taMeaning.setText("");
+                    txt2.setText("");
+                    txt3.setText("");
+                    txt4.setText("");
+                    txt1.requestFocus();
+                    setVisible(false);}
+                    else
+                        JOptionPane.showMessageDialog( ListWords.this, "Word  Not Found. Please try again!","Update Word", JOptionPane.INFORMATION_MESSAGE);
+                }
+                else {
+                    JOptionPane.showMessageDialog( ListWords.this, "Please enter all fields!","List Word", JOptionPane.ERROR_MESSAGE);
                     txt1.requestFocus();
                 }
             }
