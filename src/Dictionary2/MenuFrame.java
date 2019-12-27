@@ -12,12 +12,12 @@ public class MenuFrame extends JFrame {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         JMenuBar mb = new JMenuBar();
         // create menu
-        JMenu mnuDictionary = new JMenu("Dictionary123");
+        JMenu mnuDictionary = new JMenu("Dictionary");
         mb.add(mnuDictionary);
 
         // options in Dictionary Menu
         JMenuItem option = new JMenuItem("Add Word...");
-        ImageIcon iconAdd = new ImageIcon("C:\\Users\\Huy Coc\\Pictures\\add.gif");
+        ImageIcon iconAdd = new ImageIcon("C:\\Users\\Huy Coc\\Pictures\\edit.gif");
         option.setIcon(iconAdd);
         option.setAccelerator( KeyStroke.getKeyStroke("F5"));
         mnuDictionary.add(option);
@@ -46,7 +46,7 @@ public class MenuFrame extends JFrame {
 
         // options in Dictionary Menu
         option = new JMenuItem("Search Word...");
-        ImageIcon iconSearch = new ImageIcon("C:\\Users\\Huy Coc\\Pictures\\search.gif");
+        ImageIcon iconSearch = new ImageIcon("C:\\Users\\Huy Coc\\Pictures\\search-icon2.gif");
         option.setIcon(iconSearch);
         option.setAccelerator( KeyStroke.getKeyStroke("F7"));
         mnuDictionary.add(option);
@@ -72,8 +72,8 @@ public class MenuFrame extends JFrame {
             }
         });
         option = new JMenuItem("Play Games");
-        ImageIcon iconPlayGame = new ImageIcon("C:\\Users\\Huy Coc\\Pictures\\list.gif");
-        option.setIcon( iconList);
+        ImageIcon iconPlayGame = new ImageIcon("C:\\Users\\Huy Coc\\Pictures\\anhgame.gif");
+        option.setIcon( iconPlayGame);
         option.setAccelerator( KeyStroke.getKeyStroke("F8"));
         mnuDictionary.add(option);
         option.addActionListener(new ActionListener() {
@@ -168,9 +168,9 @@ public class MenuFrame extends JFrame {
 
     public void addToolbar() {
         JToolBar tb = new JToolBar();
-        ImageIcon iconAdd = new ImageIcon("C:\\Users\\Huy Coc\\Pictures\\add.gif");
+        ImageIcon iconAdd = new ImageIcon("C:\\Users\\Huy Coc\\Pictures\\edit.gif");
         JButton b = new JButton();
-        b.setPreferredSize( new Dimension(32,32));
+        b.setPreferredSize( new Dimension(80,80));
         tb.add(b);
         b.setToolTipText("Add Word");
         b.setIcon(iconAdd);
@@ -184,7 +184,7 @@ public class MenuFrame extends JFrame {
         ImageIcon iconDelete = new ImageIcon("C:\\Users\\Huy Coc\\Pictures\\delete.gif");
         b = new JButton();
         b.setIcon(iconDelete);
-        b.setPreferredSize( new Dimension(32,32));
+        b.setPreferredSize( new Dimension(80,80));
         tb.add(b);
         b.setToolTipText("Delete Word");
         b.addActionListener( new ActionListener() {
@@ -194,10 +194,10 @@ public class MenuFrame extends JFrame {
             }
 
         });
-        ImageIcon iconDelete1 = new ImageIcon("C:\\Users\\Huy Coc\\Pictures\\delete.gif");
+        ImageIcon iconPlayGame = new ImageIcon("C:\\Users\\Huy Coc\\Pictures\\anhgame.gif");
         b = new JButton();
-        b.setIcon(iconDelete);
-        b.setPreferredSize( new Dimension(32,32));
+        b.setIcon(iconPlayGame);
+        b.setPreferredSize( new Dimension(80,80));
         tb.add(b);
         b.setToolTipText("Play Games");
         b.addActionListener( new ActionListener() {
@@ -208,10 +208,10 @@ public class MenuFrame extends JFrame {
 
         });
 
-        ImageIcon iconSearch = new ImageIcon("C:\\Users\\Huy Coc\\Pictures\\search.gif");
+        ImageIcon iconSearch = new ImageIcon("C:\\Users\\Huy Coc\\Pictures\\search-icon2.gif");
         b = new JButton();
         b.setIcon(iconSearch);
-        b.setPreferredSize( new Dimension(32,32));
+        b.setPreferredSize( new Dimension(80,80));
         tb.add(b);
         b.setToolTipText("Search Word");
         b.addActionListener( new ActionListener() {

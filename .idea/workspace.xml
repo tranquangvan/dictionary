@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c5b2870f-8283-43dd-b9b5-c83a67fe8239" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/dictionary.ser" beforeDir="false" afterPath="$PROJECT_DIR$/dictionary.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Dictionary2/AddWord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dictionary2/AddWord.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Dictionary2/ListWords.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dictionary2/ListWords.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Dictionary2/MenuFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dictionary2/MenuFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Dictionary2/PlayGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dictionary2/PlayGame.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -57,8 +55,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Dictionary2/PlayGame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="88" column="51" selection-start-line="88" selection-start-column="51" selection-end-line="88" selection-end-column="51" />
+            <state>
+              <caret column="20" lean-forward="true" selection-start-column="20" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -69,8 +67,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Dictionary2/ListWords.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-527">
-              <caret line="35" column="54" lean-forward="true" selection-start-line="35" selection-start-column="54" selection-end-line="35" selection-end-column="54" />
+            <state relative-caret-position="272">
+              <caret line="97" column="37" lean-forward="true" selection-start-line="97" selection-start-column="37" selection-end-line="97" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#7796#7797#0" expanded="true" />
@@ -82,14 +80,15 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Dictionary2/MenuFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="55" column="56" lean-forward="true" selection-start-line="55" selection-start-column="56" selection-end-line="55" selection-end-column="56" />
+            <state relative-caret-position="153">
+              <caret line="78" column="14" selection-start-line="77" selection-start-column="8" selection-end-line="78" selection-end-column="14" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#898#899#0" expanded="true" />
                 <element signature="e#939#940#0" expanded="true" />
                 <element signature="e#1399#1400#0" expanded="true" />
                 <element signature="e#1443#1444#0" expanded="true" />
+                <element signature="e#1944#1945#0" expanded="true" />
                 <element signature="e#1988#1989#0" expanded="true" />
                 <element signature="e#2402#2403#0" expanded="true" />
                 <element signature="e#2445#2446#0" expanded="true" />
@@ -165,9 +164,9 @@
         <option value="$PROJECT_DIR$/src/Dictionary2/Dictionary.java" />
         <option value="$PROJECT_DIR$/dictionary.ser" />
         <option value="$PROJECT_DIR$/src/Dictionary2/AddWord.java" />
-        <option value="$PROJECT_DIR$/src/Dictionary2/MenuFrame.java" />
         <option value="$PROJECT_DIR$/src/Dictionary2/ListWords.java" />
         <option value="$PROJECT_DIR$/src/Dictionary2/PlayGame.java" />
+        <option value="$PROJECT_DIR$/src/Dictionary2/MenuFrame.java" />
       </list>
     </option>
   </component>
@@ -217,7 +216,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1577455878240" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1577458656282" />
     <property name="create.test.in.the.same.root" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -365,12 +364,12 @@
       <workItem from="1577162888041" duration="22009000" />
       <workItem from="1577252125796" duration="22407000" />
       <workItem from="1577326990679" duration="16359000" />
-      <workItem from="1577426792923" duration="17776000" />
+      <workItem from="1577426792923" duration="20804000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="83804000" />
+    <option name="totallyTimeSpent" value="86832000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="33" width="1550" height="838" extended-state="6" />
@@ -440,6 +439,24 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Dictionary2/PlayGame.java</url>
+          <line>86</line>
+          <properties />
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Dictionary2/PlayGame.java</url>
+          <line>88</line>
+          <properties />
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_192/src.zip!/java/awt/Window.java">
@@ -726,8 +743,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Dictionary2/ListWords.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-527">
-          <caret line="35" column="54" lean-forward="true" selection-start-line="35" selection-start-column="54" selection-end-line="35" selection-end-column="54" />
+        <state relative-caret-position="272">
+          <caret line="97" column="37" lean-forward="true" selection-start-line="97" selection-start-column="37" selection-end-line="97" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#7796#7797#0" expanded="true" />
@@ -737,8 +754,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Dictionary2/PlayGame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="88" column="51" selection-start-line="88" selection-start-column="51" selection-end-line="88" selection-end-column="51" />
+        <state>
+          <caret column="20" lean-forward="true" selection-start-column="20" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -747,14 +764,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Dictionary2/MenuFrame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="55" column="56" lean-forward="true" selection-start-line="55" selection-start-column="56" selection-end-line="55" selection-end-column="56" />
+        <state relative-caret-position="153">
+          <caret line="78" column="14" selection-start-line="77" selection-start-column="8" selection-end-line="78" selection-end-column="14" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#898#899#0" expanded="true" />
             <element signature="e#939#940#0" expanded="true" />
             <element signature="e#1399#1400#0" expanded="true" />
             <element signature="e#1443#1444#0" expanded="true" />
+            <element signature="e#1944#1945#0" expanded="true" />
             <element signature="e#1988#1989#0" expanded="true" />
             <element signature="e#2402#2403#0" expanded="true" />
             <element signature="e#2445#2446#0" expanded="true" />

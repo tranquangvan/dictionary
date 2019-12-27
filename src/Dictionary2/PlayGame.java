@@ -115,7 +115,6 @@ public class PlayGame extends JFrame {
         pack();
         show();
     }
-
     public static void main(String[] args) {
         PlayGame playGame = new PlayGame("Play Game Learn English ");
         playGame.setSize(500,500);
