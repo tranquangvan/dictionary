@@ -47,6 +47,7 @@ public class ListWords extends JFrame {
         wordsTable = new JTable(rows, headings);
         JScrollPane sp = new JScrollPane(wordsTable,JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED,JScrollPane.HORIZONTAL_SCROLLBAR_AS_NEEDED);
         pn.add(sp);
+        wordsTable.setBackground(Color.cyan);
         pn1 = new Panel(new GridLayout(10,1));
         lb1 = new Label("Word: ");
         lb2 = new Label("Meaning: ");
@@ -78,6 +79,7 @@ public class ListWords extends JFrame {
                 txt4.setText((String)wordsTable.getValueAt(index, 4));
             }
         });
+
         btnAdd.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -97,8 +99,10 @@ public class ListWords extends JFrame {
                     txt3.setText("");
                     txt4.setText("");
                     txt1.requestFocus();
-                   setVisible(false);
-                }
+                    setVisible(false);
+                    CenteredFrame(new ListWords());
+
+          }
                 else {
                     JOptionPane.showMessageDialog( ListWords.this, "Please enter word and meaning!","List Word", JOptionPane.ERROR_MESSAGE);
                     txt1.requestFocus();
@@ -112,6 +116,7 @@ public class ListWords extends JFrame {
                     boolean done = Dictionary.deleteWord(txt1.getText());
                     //Dictionary.saveToDisk();
                     setVisible(false);
+                    CenteredFrame(new ListWords());
                     if (!done)
                         JOptionPane.showMessageDialog( ListWords.this, "Word  Not Found. Please try again!","Delete Word", JOptionPane.INFORMATION_MESSAGE);
                     else
@@ -142,7 +147,9 @@ public class ListWords extends JFrame {
                     txt3.setText("");
                     txt4.setText("");
                     txt1.requestFocus();
-                    setVisible(false);}
+                        setVisible(false);
+                        CenteredFrame(new ListWords());
+                    }
                     else
                         JOptionPane.showMessageDialog( ListWords.this, "Word  Not Found. Please try again!","Update Word", JOptionPane.INFORMATION_MESSAGE);
                 }
@@ -169,8 +176,16 @@ public class ListWords extends JFrame {
         pn1.add(pn2);
         pn.add(pn1);
         container.add(pn);
+
+        container.setBackground(Color.gray);
         pack();
         show();
+    }
+    public void CenteredFrame(javax.swing.JFrame objFrame){
+        Dimension objDimension = Toolkit.getDefaultToolkit().getScreenSize();
+        int iCoordX = (objDimension.width - objFrame.getWidth()) / 2;
+        int iCoordY = (objDimension.height - objFrame.getHeight()) / 2;
+        objFrame.setLocation(iCoordX, iCoordY);
     }
     public static void main(String[] args) {
         ListWords listWords = new ListWords();

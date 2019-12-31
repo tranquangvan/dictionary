@@ -2,8 +2,44 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c5b2870f-8283-43dd-b9b5-c83a67fe8239" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/Dictionary2/MenuFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dictionary2/MenuFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dictionary.ser" beforeDir="false" afterPath="$PROJECT_DIR$/dictionary.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DictionCopy2/Dictionary2/AddWord$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DictionCopy2/Dictionary2/AddWord.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DictionCopy2/Dictionary2/DeleteWord$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DictionCopy2/Dictionary2/DeleteWord.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DictionCopy2/Dictionary2/Dictionary.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DictionCopy2/Dictionary2/Dictionary.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DictionCopy2/Dictionary2/ListWords$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DictionCopy2/Dictionary2/ListWords$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DictionCopy2/Dictionary2/ListWords$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DictionCopy2/Dictionary2/ListWords$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DictionCopy2/Dictionary2/ListWords$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DictionCopy2/Dictionary2/ListWords$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DictionCopy2/Dictionary2/ListWords.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DictionCopy2/Dictionary2/ListWords.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DictionCopy2/Dictionary2/MenuFrame$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DictionCopy2/Dictionary2/MenuFrame$10.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DictionCopy2/Dictionary2/MenuFrame$11.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DictionCopy2/Dictionary2/MenuFrame$12.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DictionCopy2/Dictionary2/MenuFrame$13.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DictionCopy2/Dictionary2/MenuFrame$14.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DictionCopy2/Dictionary2/MenuFrame$15.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DictionCopy2/Dictionary2/MenuFrame$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DictionCopy2/Dictionary2/MenuFrame$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DictionCopy2/Dictionary2/MenuFrame$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DictionCopy2/Dictionary2/MenuFrame$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DictionCopy2/Dictionary2/MenuFrame$6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DictionCopy2/Dictionary2/MenuFrame$7.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DictionCopy2/Dictionary2/MenuFrame$8.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DictionCopy2/Dictionary2/MenuFrame$9.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DictionCopy2/Dictionary2/MenuFrame.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DictionCopy2/Dictionary2/PlayGame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DictionCopy2/Dictionary2/PlayGame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DictionCopy2/Dictionary2/SearchWord$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DictionCopy2/Dictionary2/SearchWord.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Dictionary2/AddWord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dictionary2/FunctionAdd.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Dictionary2/DeleteWord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dictionary2/FunctionDelete.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Dictionary2/Dictionary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dictionary2/Dictionary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Dictionary2/ListWords.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dictionary2/ListWords.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Dictionary2/MenuFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dictionary2/FrameMainMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Dictionary2/MyHashMap.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Dictionary2/PlayGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dictionary2/PlayGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Dictionary2/SearchWord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dictionary2/FunctionSearch.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,8 +53,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Dictionary2/Dictionary.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-5">
-              <caret line="64" column="22" selection-start-line="64" selection-start-column="22" selection-end-line="64" selection-end-column="22" />
+            <state relative-caret-position="-685">
+              <caret line="17" column="12" lean-forward="true" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#966#967#0" expanded="true" />
@@ -29,10 +65,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Dictionary2/DeleteWord.java">
+        <entry file="file://$PROJECT_DIR$/src/Dictionary2/FunctionDelete.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="32" column="45" lean-forward="true" selection-start-line="32" selection-start-column="45" selection-end-line="32" selection-end-column="45" />
+            <state relative-caret-position="-5">
+              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -41,10 +77,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Dictionary2/AddWord.java">
+        <entry file="file://$PROJECT_DIR$/src/Dictionary2/FunctionAdd.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="48" column="68" lean-forward="true" selection-start-line="48" selection-start-column="68" selection-end-line="48" selection-end-column="68" />
+            <state relative-caret-position="202">
+              <caret line="96" column="22" lean-forward="true" selection-start-line="96" selection-start-column="22" selection-end-line="96" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -55,8 +91,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Dictionary2/PlayGame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="20" lean-forward="true" selection-start-column="20" selection-end-column="20" />
+            <state relative-caret-position="80">
+              <caret line="100" lean-forward="true" selection-start-line="100" selection-end-line="100" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -65,51 +101,82 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dictionary.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="16" column="41" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Dictionary2/ListWords.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="97" column="37" lean-forward="true" selection-start-line="97" selection-start-column="37" selection-end-line="97" selection-end-column="37" />
+            <state relative-caret-position="-2042">
+              <caret line="39" column="52" lean-forward="true" selection-start-line="39" selection-start-column="52" selection-end-line="39" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#7796#7797#0" expanded="true" />
+                <element signature="e#8404#8405#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Dictionary2/FrameMainMenu.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-291">
+              <caret line="271" column="11" lean-forward="true" selection-start-line="271" selection-start-column="11" selection-end-line="271" selection-end-column="11" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#945#946#0" expanded="true" />
+                <element signature="e#986#987#0" expanded="true" />
+                <element signature="e#1447#1448#0" expanded="true" />
+                <element signature="e#1491#1492#0" expanded="true" />
+                <element signature="e#1999#2000#0" expanded="true" />
+                <element signature="e#2043#2044#0" expanded="true" />
+                <element signature="e#2458#2459#0" expanded="true" />
+                <element signature="e#2501#2502#0" expanded="true" />
+                <element signature="e#2925#2926#0" expanded="true" />
+                <element signature="e#2967#2968#0" expanded="true" />
+                <element signature="e#5164#5165#0" expanded="true" />
+                <element signature="e#5202#5203#0" expanded="true" />
+                <element signature="e#7636#7637#0" expanded="true" />
+                <element signature="e#7677#7678#0" expanded="true" />
+                <element signature="e#8080#8081#0" expanded="true" />
+                <element signature="e#8124#8125#0" expanded="true" />
+                <element signature="e#8531#8532#0" expanded="true" />
+                <element signature="e#8573#8574#0" expanded="true" />
+                <element signature="e#8983#8984#0" expanded="true" />
+                <element signature="e#9027#9028#0" expanded="true" />
+                <element signature="e#9375#9376#0" expanded="true" />
+                <element signature="e#9418#9419#0" expanded="true" />
+                <element signature="e#9805#9806#0" expanded="true" />
+                <element signature="e#9860#9861#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Dictionary2/MyVector.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2470">
+              <caret line="7" column="29" lean-forward="true" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Dictionary2/MenuFrame.java">
+        <entry file="file://$PROJECT_DIR$/src/Dictionary2/FunctionSearch.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="78" column="14" selection-start-line="77" selection-start-column="8" selection-end-line="78" selection-end-column="14" />
+            <state relative-caret-position="170">
+              <caret line="10" column="22" lean-forward="true" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#898#899#0" expanded="true" />
-                <element signature="e#939#940#0" expanded="true" />
-                <element signature="e#1399#1400#0" expanded="true" />
-                <element signature="e#1443#1444#0" expanded="true" />
-                <element signature="e#1944#1945#0" expanded="true" />
-                <element signature="e#1988#1989#0" expanded="true" />
-                <element signature="e#2402#2403#0" expanded="true" />
-                <element signature="e#2445#2446#0" expanded="true" />
-                <element signature="e#2861#2862#0" expanded="true" />
-                <element signature="e#2903#2904#0" expanded="true" />
-                <element signature="e#3169#3170#0" expanded="true" />
-                <element signature="e#3207#3208#0" expanded="true" />
-                <element signature="e#5592#5593#0" expanded="true" />
-                <element signature="e#5633#5634#0" expanded="true" />
-                <element signature="e#6036#6037#0" expanded="true" />
-                <element signature="e#6080#6081#0" expanded="true" />
-                <element signature="e#6483#6484#0" expanded="true" />
-                <element signature="e#6527#6528#0" expanded="true" />
-                <element signature="e#6939#6940#0" expanded="true" />
-                <element signature="e#6983#6984#0" expanded="true" />
-                <element signature="e#7331#7332#0" expanded="true" />
-                <element signature="e#7374#7375#0" expanded="true" />
-                <element signature="e#7761#7762#0" expanded="true" />
-                <element signature="e#7816#7817#0" expanded="true" />
-                <element signature="e#8177#8178#0" expanded="true" />
-                <element signature="e#8234#8235#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -140,6 +207,7 @@
       <find>put</find>
       <find>jp1</find>
       <find>pn</find>
+      <find>frame</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -154,27 +222,31 @@
         <option value="$PROJECT_DIR$/src/Dictionary/AddWord.java" />
         <option value="$PROJECT_DIR$/src/Dictionary/SearchWord.java" />
         <option value="$PROJECT_DIR$/src/Dictionary/ListWords.java" />
-        <option value="$PROJECT_DIR$/src/Dictionary2/DeleteWord.java" />
         <option value="$PROJECT_DIR$/src/MyVector.java" />
         <option value="$PROJECT_DIR$/src/Dictionary2/MyVector.java" />
         <option value="$PROJECT_DIR$/src/Dictionary2/Vector.java" />
-        <option value="$PROJECT_DIR$/src/Dictionary2/SearchWord.java" />
         <option value="$PROJECT_DIR$/src/Dictionary/MenuFrame.java" />
         <option value="$PROJECT_DIR$/src/Dictionary2/MyHashMap.java" />
-        <option value="$PROJECT_DIR$/src/Dictionary2/Dictionary.java" />
         <option value="$PROJECT_DIR$/dictionary.ser" />
         <option value="$PROJECT_DIR$/src/Dictionary2/AddWord.java" />
-        <option value="$PROJECT_DIR$/src/Dictionary2/ListWords.java" />
-        <option value="$PROJECT_DIR$/src/Dictionary2/PlayGame.java" />
+        <option value="$PROJECT_DIR$/src/Dictionary2/DeleteWord.java" />
         <option value="$PROJECT_DIR$/src/Dictionary2/MenuFrame.java" />
+        <option value="$PROJECT_DIR$/src/Dictionary2/SearchWord.java" />
+        <option value="$PROJECT_DIR$/src/Dictionary2/Dictionary.java" />
+        <option value="$PROJECT_DIR$/src/Dictionary2/FunctionAdd.java" />
+        <option value="$PROJECT_DIR$/src/Dictionary2/FunctionDelete.java" />
+        <option value="$PROJECT_DIR$/src/Dictionary2/FrameMainMenu.java" />
+        <option value="$PROJECT_DIR$/src/Dictionary2/PlayGame.java" />
+        <option value="$PROJECT_DIR$/src/Dictionary2/FunctionSearch.java" />
+        <option value="$PROJECT_DIR$/src/Dictionary2/ListWords.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-9" />
-    <option name="y" value="41" />
-    <option name="width" value="978" />
-    <option name="height" value="1048" />
+    <option name="x" value="-10" />
+    <option name="y" value="50" />
+    <option name="width" value="979" />
+    <option name="height" value="1030" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -182,7 +254,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -210,15 +281,16 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1577458656282" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1577784719843" />
     <property name="create.test.in.the.same.root" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ProjectThayTao" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -252,8 +324,15 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.MenuFrame">
-    <configuration name="AddWord (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager">
+    <configuration name="AddWord" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="AddWord" />
+      <module name="DictionCopy2" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AddWord" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Dictionary2.AddWord" />
       <module name="DictionCopy2" />
       <extension name="coverage">
@@ -266,15 +345,34 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AddWord" type="Application" factoryName="Application" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="AddWord" />
+    <configuration name="FrameMainMenu" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Dictionary2.FrameMainMenu" />
       <module name="DictionCopy2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Dictionary2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AddWord" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Dictionary2.AddWord" />
+    <configuration name="FunctionAdd" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Dictionary2.FunctionAdd" />
+      <module name="DictionCopy2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Dictionary2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FunctionSearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Dictionary2.FunctionSearch" />
       <module name="DictionCopy2" />
       <extension name="coverage">
         <pattern>
@@ -299,19 +397,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MenuFrame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Dictionary2.MenuFrame" />
-      <module name="DictionCopy2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Dictionary2.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="PlayGame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Dictionary2.PlayGame" />
       <module name="DictionCopy2" />
@@ -325,26 +410,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SearchWord" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Dictionary2.SearchWord" />
-      <module name="DictionCopy2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Dictionary2.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.MenuFrame" />
+        <item itemvalue="Application.FrameMainMenu" />
         <item itemvalue="Application.PlayGame" />
+        <item itemvalue="Application.FunctionAdd" />
         <item itemvalue="Application.ListWords" />
-        <item itemvalue="Application.AddWord (1)" />
-        <item itemvalue="Application.SearchWord" />
+        <item itemvalue="Application.FunctionSearch" />
       </list>
     </recent_temporary>
   </component>
@@ -365,17 +437,18 @@
       <workItem from="1577252125796" duration="22407000" />
       <workItem from="1577326990679" duration="16359000" />
       <workItem from="1577426792923" duration="20804000" />
+      <workItem from="1577758249326" duration="16088000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="86832000" />
+    <option name="totallyTimeSpent" value="102920000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="33" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1261745" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13624161" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -384,7 +457,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.28611898" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2917847" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -439,24 +512,6 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Dictionary2/PlayGame.java</url>
-          <line>86</line>
-          <properties />
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Dictionary2/PlayGame.java</url>
-          <line>88</line>
-          <properties />
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_192/src.zip!/java/awt/Window.java">
@@ -606,38 +661,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Dictionary2/SearchWord.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="33" column="93" selection-start-line="33" selection-start-column="93" selection-end-line="33" selection-end-column="93" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#4119#4120#0" expanded="true" />
-            <element signature="e#4175#4176#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_192/src.zip!/java/util/TreeMap.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
           <caret line="110" column="13" selection-start-line="110" selection-start-column="13" selection-end-line="110" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MyVector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="59">
-          <caret line="163" column="8" selection-start-line="163" selection-start-column="8" selection-end-line="163" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#570#571#0" expanded="true" />
-            <element signature="e#610#611#0" expanded="true" />
-            <element signature="e#867#868#0" expanded="true" />
-            <element signature="e#898#899#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -662,23 +691,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Dictionary2/MyHashMap.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Dictionary/MenuFrame.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="19" selection-start-column="19" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Dictionary2/MyVector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -692,35 +708,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dictionary.ser">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_192/src.zip!/java/awt/Container.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1094" selection-start-line="1094" selection-end-line="1094" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Dictionary2/Dictionary.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5">
-          <caret line="64" column="22" selection-start-line="64" selection-start-column="22" selection-end-line="64" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#966#967#0" expanded="true" />
-            <element signature="e#994#995#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Dictionary2/DeleteWord.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="32" column="45" lean-forward="true" selection-start-line="32" selection-start-column="45" selection-end-line="32" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -731,10 +722,65 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Dictionary2/AddWord.java">
+    <entry file="file://$PROJECT_DIR$/dictionary.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="48" column="68" lean-forward="true" selection-start-line="48" selection-start-column="68" selection-end-line="48" selection-end-column="68" />
+        <state relative-caret-position="221">
+          <caret line="16" column="41" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dictionary.ser">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Dictionary2/MyHashMap.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MyVector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="664">
+          <caret line="162" column="55" lean-forward="true" selection-start-line="162" selection-start-column="55" selection-end-line="162" selection-end-column="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Dictionary2/Dictionary.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-685">
+          <caret line="17" column="12" lean-forward="true" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#966#967#0" expanded="true" />
+            <element signature="e#994#995#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Dictionary2/FunctionDelete.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Dictionary2/FunctionAdd.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="96" column="22" lean-forward="true" selection-start-line="96" selection-start-column="22" selection-end-line="96" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Dictionary2/PlayGame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="100" lean-forward="true" selection-start-line="100" selection-end-line="100" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -743,57 +789,65 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Dictionary2/ListWords.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="97" column="37" lean-forward="true" selection-start-line="97" selection-start-column="37" selection-end-line="97" selection-end-column="37" />
+        <state relative-caret-position="-2042">
+          <caret line="39" column="52" lean-forward="true" selection-start-line="39" selection-start-column="52" selection-end-line="39" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#7796#7797#0" expanded="true" />
+            <element signature="e#8404#8405#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Dictionary2/PlayGame.java">
+    <entry file="file://$PROJECT_DIR$/src/Dictionary2/FrameMainMenu.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="20" lean-forward="true" selection-start-column="20" selection-end-column="20" />
+        <state relative-caret-position="-291">
+          <caret line="271" column="11" lean-forward="true" selection-start-line="271" selection-start-column="11" selection-end-line="271" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#945#946#0" expanded="true" />
+            <element signature="e#986#987#0" expanded="true" />
+            <element signature="e#1447#1448#0" expanded="true" />
+            <element signature="e#1491#1492#0" expanded="true" />
+            <element signature="e#1999#2000#0" expanded="true" />
+            <element signature="e#2043#2044#0" expanded="true" />
+            <element signature="e#2458#2459#0" expanded="true" />
+            <element signature="e#2501#2502#0" expanded="true" />
+            <element signature="e#2925#2926#0" expanded="true" />
+            <element signature="e#2967#2968#0" expanded="true" />
+            <element signature="e#5164#5165#0" expanded="true" />
+            <element signature="e#5202#5203#0" expanded="true" />
+            <element signature="e#7636#7637#0" expanded="true" />
+            <element signature="e#7677#7678#0" expanded="true" />
+            <element signature="e#8080#8081#0" expanded="true" />
+            <element signature="e#8124#8125#0" expanded="true" />
+            <element signature="e#8531#8532#0" expanded="true" />
+            <element signature="e#8573#8574#0" expanded="true" />
+            <element signature="e#8983#8984#0" expanded="true" />
+            <element signature="e#9027#9028#0" expanded="true" />
+            <element signature="e#9375#9376#0" expanded="true" />
+            <element signature="e#9418#9419#0" expanded="true" />
+            <element signature="e#9805#9806#0" expanded="true" />
+            <element signature="e#9860#9861#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Dictionary2/MyVector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2470">
+          <caret line="7" column="29" lean-forward="true" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Dictionary2/MenuFrame.java">
+    <entry file="file://$PROJECT_DIR$/src/Dictionary2/FunctionSearch.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="78" column="14" selection-start-line="77" selection-start-column="8" selection-end-line="78" selection-end-column="14" />
+        <state relative-caret-position="170">
+          <caret line="10" column="22" lean-forward="true" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#898#899#0" expanded="true" />
-            <element signature="e#939#940#0" expanded="true" />
-            <element signature="e#1399#1400#0" expanded="true" />
-            <element signature="e#1443#1444#0" expanded="true" />
-            <element signature="e#1944#1945#0" expanded="true" />
-            <element signature="e#1988#1989#0" expanded="true" />
-            <element signature="e#2402#2403#0" expanded="true" />
-            <element signature="e#2445#2446#0" expanded="true" />
-            <element signature="e#2861#2862#0" expanded="true" />
-            <element signature="e#2903#2904#0" expanded="true" />
-            <element signature="e#3169#3170#0" expanded="true" />
-            <element signature="e#3207#3208#0" expanded="true" />
-            <element signature="e#5592#5593#0" expanded="true" />
-            <element signature="e#5633#5634#0" expanded="true" />
-            <element signature="e#6036#6037#0" expanded="true" />
-            <element signature="e#6080#6081#0" expanded="true" />
-            <element signature="e#6483#6484#0" expanded="true" />
-            <element signature="e#6527#6528#0" expanded="true" />
-            <element signature="e#6939#6940#0" expanded="true" />
-            <element signature="e#6983#6984#0" expanded="true" />
-            <element signature="e#7331#7332#0" expanded="true" />
-            <element signature="e#7374#7375#0" expanded="true" />
-            <element signature="e#7761#7762#0" expanded="true" />
-            <element signature="e#7816#7817#0" expanded="true" />
-            <element signature="e#8177#8178#0" expanded="true" />
-            <element signature="e#8234#8235#0" expanded="true" />
           </folding>
         </state>
       </provider>

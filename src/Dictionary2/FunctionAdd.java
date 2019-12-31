@@ -4,7 +4,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class AddWord extends JFrame {
+public class FunctionAdd extends JFrame {
     JTextField tfWord;
     JTextArea  taMeaning;
     JTextField tfNoun;
@@ -12,7 +12,7 @@ public class AddWord extends JFrame {
     JTextField tfTranscribe;
     JButton btnAdd;
 
-    public AddWord() {
+    public FunctionAdd() {
         GridBagLayout gbl  = new GridBagLayout();
         GridBagConstraints gbc = new GridBagConstraints();
         gbc.insets = new Insets(5,5,5,5);
@@ -36,7 +36,7 @@ public class AddWord extends JFrame {
                                               details.add(tfVerb.getText());
                                               details.add(tfTranscribe.getText());
                                                   Dictionary.addWord(tfWord.getText(), details);
-                                              JOptionPane.showMessageDialog( AddWord.this, "Added Word Successfully!","Add Word", JOptionPane.INFORMATION_MESSAGE);
+                                              JOptionPane.showMessageDialog( FunctionAdd.this, "Added Word Successfully!","Add Word", JOptionPane.INFORMATION_MESSAGE);
                                               tfWord.setText("");
                                               taMeaning.setText("");
                                               tfNoun.setText("");
@@ -45,7 +45,7 @@ public class AddWord extends JFrame {
                                               tfWord.requestFocus();
                                           }
                                           else {
-                                              JOptionPane.showMessageDialog( AddWord.this, "Please enter all fields!","Add Word", JOptionPane.ERROR_MESSAGE);
+                                              JOptionPane.showMessageDialog( FunctionAdd.this, "Please enter all fields!","Add Word", JOptionPane.ERROR_MESSAGE);
                                               tfWord.requestFocus();
                                           }
                                       }
@@ -54,7 +54,7 @@ public class AddWord extends JFrame {
 
         Container c = getContentPane();
         c.setLayout(gbl);
-        c.setSize(500,500);
+
 
         // add tfWord
         gbc.fill = GridBagConstraints.HORIZONTAL;
@@ -107,11 +107,12 @@ public class AddWord extends JFrame {
         gbc.anchor = GridBagConstraints.CENTER;
         gbc.fill = GridBagConstraints.NONE;
         c.add(btnAdd,gbc);
+        c.setBackground(Color.orange);
         show();
         pack(); // get requried size based on components
     }
 
     public static void main(String[] args) {
-        new AddWord();
+        new FunctionAdd();
     }
 }

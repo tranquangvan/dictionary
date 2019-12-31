@@ -5,22 +5,25 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class MenuFrame extends JFrame {
+public class FrameMainMenu extends JFrame {
 
-    public MenuFrame() throws Exception {
+    public FrameMainMenu() throws Exception {
         super("Dictionary");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         JMenuBar mb = new JMenuBar();
+        mb.add(Box.createRigidArea(new Dimension(100,50)));
         // create menu
-        JMenu mnuDictionary = new JMenu("Dictionary");
-        mb.add(mnuDictionary);
-
+        JMenu menuDictionary = new JMenu("DictionaryMenu");
+        menuDictionary.setPreferredSize(new Dimension(100,50));
+        mb.add(menuDictionary);
+        mb.setBackground(Color.cyan);
+        menuDictionary.setBackground(Color.cyan);
         // options in Dictionary Menu
         JMenuItem option = new JMenuItem("Add Word...");
         ImageIcon iconAdd = new ImageIcon("C:\\Users\\Huy Coc\\Pictures\\edit.gif");
         option.setIcon(iconAdd);
         option.setAccelerator( KeyStroke.getKeyStroke("F5"));
-        mnuDictionary.add(option);
+        menuDictionary.add(option);
         option.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -33,7 +36,7 @@ public class MenuFrame extends JFrame {
         ImageIcon iconDelete = new ImageIcon("C:\\Users\\Huy Coc\\Pictures\\delete.gif");
         option.setIcon(iconDelete);
         option.setAccelerator( KeyStroke.getKeyStroke("F6"));
-        mnuDictionary.add(option);
+        menuDictionary.add(option);
         option.addActionListener(new ActionListener() {
 
             @Override
@@ -49,7 +52,7 @@ public class MenuFrame extends JFrame {
         ImageIcon iconSearch = new ImageIcon("C:\\Users\\Huy Coc\\Pictures\\search-icon2.gif");
         option.setIcon(iconSearch);
         option.setAccelerator( KeyStroke.getKeyStroke("F7"));
-        mnuDictionary.add(option);
+        menuDictionary.add(option);
         option.addActionListener(new ActionListener() {
 
             @Override
@@ -63,7 +66,7 @@ public class MenuFrame extends JFrame {
         ImageIcon iconList = new ImageIcon("C:\\Users\\Huy Coc\\Pictures\\list.gif");
         option.setIcon( iconList);
         option.setAccelerator( KeyStroke.getKeyStroke("F8"));
-        mnuDictionary.add(option);
+        menuDictionary.add(option);
         option.addActionListener(new ActionListener() {
 
             @Override
@@ -74,8 +77,8 @@ public class MenuFrame extends JFrame {
         option = new JMenuItem("Play Games");
         ImageIcon iconPlayGame = new ImageIcon("C:\\Users\\Huy Coc\\Pictures\\anhgame.gif");
         option.setIcon( iconPlayGame);
-        option.setAccelerator( KeyStroke.getKeyStroke("F8"));
-        mnuDictionary.add(option);
+        option.setAccelerator( KeyStroke.getKeyStroke("F1"));
+        menuDictionary.add(option);
         option.addActionListener(new ActionListener() {
 
             @Override
@@ -85,10 +88,50 @@ public class MenuFrame extends JFrame {
         });
 
 
+         option = new JMenuItem("Save Dictionary");
+        ImageIcon iconSave = new ImageIcon("C:\\Users\\Huy Coc\\Pictures\\save.gif");
+        option.setIcon(iconSave);
+        option.setAccelerator( KeyStroke.getKeyStroke("F2"));
+        menuDictionary.add(option);
+        option.addActionListener(new ActionListener() {
+
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                boolean result = Dictionary.saveToDisk();
+                if (result) {
+                    JOptionPane.showMessageDialog(FrameMainMenu.this, "Saved Dictionary Successfully!", "Feedback",
+                            JOptionPane.INFORMATION_MESSAGE);
+                } else {
+                    JOptionPane.showMessageDialog(FrameMainMenu.this, "Could Not Save Dictionary Successfully! Error --> " + Dictionary.getMessage(), "Feedback",
+                            JOptionPane.INFORMATION_MESSAGE);
+                }
+            }
+        });
+
+
+        option = new JMenuItem("Load Dictionary");
+        ImageIcon iconLoad = new ImageIcon("C:\\Users\\Huy Coc\\Pictures\\load.gif");
+        option.setIcon(iconLoad);
+        option.setAccelerator( KeyStroke.getKeyStroke("F3"));
+        menuDictionary.add(option);
+        option.addActionListener(new ActionListener() {
+
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                boolean result = Dictionary.loadFromDisk();
+                if (result) {
+                    JOptionPane.showMessageDialog(FrameMainMenu.this, "Loaded Dictionary Successfully!", "Feedback",
+                            JOptionPane.INFORMATION_MESSAGE);
+                } else {
+                    JOptionPane.showMessageDialog(FrameMainMenu.this, "Could Not Load Dictionary Successfully! Error --> " + Dictionary.getMessage(), "Feedback",
+                            JOptionPane.INFORMATION_MESSAGE);
+                }
+            }
+        });
 //        mnuDictionary.addSeparator();
 
         option = new JMenuItem("Exit");
-        mnuDictionary.add(option);
+        menuDictionary.add(option);
         option.addActionListener(new ActionListener() {
 
             @Override
@@ -97,7 +140,7 @@ public class MenuFrame extends JFrame {
             }
         });
 
-        addStorageMenu(mb);
+
         addToolbar();
         setJMenuBar(mb);
 
@@ -108,7 +151,7 @@ public class MenuFrame extends JFrame {
 
     public void exit() {
         if (Dictionary.isModified()) {
-            int option = JOptionPane.showConfirmDialog(MenuFrame.this, "You have some pending changes. Do you want to write them to disk and then exit?",
+            int option = JOptionPane.showConfirmDialog(FrameMainMenu.this, "You have some pending changes. Do you want to write them to disk and then exit?",
                     "Save", JOptionPane.YES_NO_CANCEL_OPTION, JOptionPane.QUESTION_MESSAGE);
 
             if (option == JOptionPane.YES_OPTION) {  // exit after save
@@ -137,32 +180,33 @@ public class MenuFrame extends JFrame {
     }
 
     public void addWord() {
-        AddWord w = new AddWord();
-        centerToParent(MenuFrame.this, w);
+        FunctionAdd w = new FunctionAdd();
+        centerToParent(FrameMainMenu.this, w);
         w.setVisible(true);
     }
 
     public void deleteWord() {
-        DeleteWord w = new DeleteWord();
-        centerToParent(MenuFrame.this, w);
+        FunctionDelete w = new FunctionDelete();
+        centerToParent(FrameMainMenu.this, w);
         w.setVisible(true);
     }
 
     public void searchWord() {
-        SearchWord w = new SearchWord();
-        centerToParent(MenuFrame.this, w);
+        FunctionSearch w = new FunctionSearch();
+        centerToParent(FrameMainMenu.this, w);
         w.setVisible(true);
     }
 
     public void listWords() {
         ListWords w = new ListWords();
+
         w.setVisible(true);
-        centerToParent(MenuFrame.this, w);
+        centerToParent(FrameMainMenu.this, w);
     }
     public void playGame() {
         PlayGame w = new PlayGame("Play Game");
         w.setVisible(true);
-        centerToParent(MenuFrame.this, w);
+        centerToParent(FrameMainMenu.this, w);
     }
 
 
@@ -171,7 +215,9 @@ public class MenuFrame extends JFrame {
         ImageIcon iconAdd = new ImageIcon("C:\\Users\\Huy Coc\\Pictures\\edit.gif");
         JButton b = new JButton();
         b.setPreferredSize( new Dimension(80,80));
+        tb.setBackground(Color.lightGray);
         tb.add(b);
+        b.setBackground(Color.yellow);
         b.setToolTipText("Add Word");
         b.setIcon(iconAdd);
         b.addActionListener( new ActionListener() {
@@ -184,6 +230,7 @@ public class MenuFrame extends JFrame {
         ImageIcon iconDelete = new ImageIcon("C:\\Users\\Huy Coc\\Pictures\\delete.gif");
         b = new JButton();
         b.setIcon(iconDelete);
+        b.setBackground(Color.yellow);
         b.setPreferredSize( new Dimension(80,80));
         tb.add(b);
         b.setToolTipText("Delete Word");
@@ -196,6 +243,7 @@ public class MenuFrame extends JFrame {
         });
         ImageIcon iconPlayGame = new ImageIcon("C:\\Users\\Huy Coc\\Pictures\\anhgame.gif");
         b = new JButton();
+        b.setBackground(Color.yellow);
         b.setIcon(iconPlayGame);
         b.setPreferredSize( new Dimension(80,80));
         tb.add(b);
@@ -211,6 +259,7 @@ public class MenuFrame extends JFrame {
         ImageIcon iconSearch = new ImageIcon("C:\\Users\\Huy Coc\\Pictures\\search-icon2.gif");
         b = new JButton();
         b.setIcon(iconSearch);
+        b.setBackground(Color.yellow);
         b.setPreferredSize( new Dimension(80,80));
         tb.add(b);
         b.setToolTipText("Search Word");
@@ -224,6 +273,7 @@ public class MenuFrame extends JFrame {
 
 
         b = new JButton();
+        b.setBackground(Color.yellow);
         ImageIcon iconList = new ImageIcon("C:\\Users\\Huy Coc\\Pictures\\list.gif");
         b.setIcon( iconList);
         tb.add(b);
@@ -239,6 +289,7 @@ public class MenuFrame extends JFrame {
         tb.addSeparator();
 
         b = new JButton();
+        b.setBackground(Color.yellow);
         ImageIcon iconSave = new ImageIcon("C:\\Users\\Huy Coc\\Pictures\\save.gif");
         tb.add(b);
         b.setIcon(iconSave);
@@ -250,75 +301,19 @@ public class MenuFrame extends JFrame {
             }
 
         });
+         JLabel headerLabel= new JLabel("", JLabel.CENTER);
 
-        b = new JButton();
-        ImageIcon iconLoad = new ImageIcon("C:\\Users\\Huy Coc\\Pictures\\load.gif");
-        tb.add(b);
-        b.setIcon(iconLoad);
-        b.setToolTipText("Load Dictionary From Disk");
-        b.addActionListener( new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                Dictionary.loadFromDisk();
-            }
-
-        });
-
+        ImageIcon iconAvatar = new ImageIcon("C:\\Users\\Huy Coc\\Pictures\\dictionary3.gif");
+        headerLabel.setIcon(iconAvatar);
+        getContentPane().add(headerLabel);
         getContentPane().add(tb, BorderLayout.NORTH);
+        getContentPane().setBackground(Color.lightGray);
     }
 
-    public void addStorageMenu(JMenuBar mb) {
 
-        JMenu mnuStorage = new JMenu("Storage");
-
-        // options in Storage Menu
-
-        JMenuItem option = new JMenuItem("Save Dictionary");
-        ImageIcon iconSave = new ImageIcon("C:\\Users\\Huy Coc\\Pictures\\save.gif");
-        option.setIcon(iconSave);
-        option.setAccelerator( KeyStroke.getKeyStroke("F2"));
-        mnuStorage.add(option);
-        option.addActionListener(new ActionListener() {
-
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                boolean result = Dictionary.saveToDisk();
-                if (result) {
-                    JOptionPane.showMessageDialog(MenuFrame.this, "Saved Dictionary Successfully!", "Feedback",
-                            JOptionPane.INFORMATION_MESSAGE);
-                } else {
-                    JOptionPane.showMessageDialog(MenuFrame.this, "Could Not Save Dictionary Successfully! Error --> " + Dictionary.getMessage(), "Feedback",
-                            JOptionPane.INFORMATION_MESSAGE);
-                }
-            }
-        });
-
-
-        option = new JMenuItem("Load Dictionary");
-        ImageIcon iconLoad = new ImageIcon("C:\\Users\\Huy Coc\\Pictures\\load.gif");
-        option.setIcon(iconLoad);
-        option.setAccelerator( KeyStroke.getKeyStroke("F3"));
-        mnuStorage.add(option);
-        option.addActionListener(new ActionListener() {
-
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                boolean result = Dictionary.loadFromDisk();
-                if (result) {
-                    JOptionPane.showMessageDialog(MenuFrame.this, "Loaded Dictionary Successfully!", "Feedback",
-                            JOptionPane.INFORMATION_MESSAGE);
-                } else {
-                    JOptionPane.showMessageDialog(MenuFrame.this, "Could Not Load Dictionary Successfully! Error --> " + Dictionary.getMessage(), "Feedback",
-                            JOptionPane.INFORMATION_MESSAGE);
-                }
-            }
-        });
-        mb.add(mnuStorage);
-    }
     public static void main(String[] args) throws Exception {
-        MenuFrame f = new MenuFrame();
+        FrameMainMenu f = new FrameMainMenu();
         f.setVisible(true);
         f.setExtendedState(JFrame.MAXIMIZED_BOTH);
-
     }
 }

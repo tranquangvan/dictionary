@@ -6,10 +6,10 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class DeleteWord extends JFrame {
+public class FunctionDelete extends JFrame {
     JTextField tfWord;
     JButton btnDelete;
-    public DeleteWord(){
+    public FunctionDelete(){
         super("Delete Word");
         tfWord = new JTextField(20);
         btnDelete = new JButton("Delete");
@@ -20,12 +20,12 @@ public class DeleteWord extends JFrame {
                     boolean done = Dictionary.deleteWord(tfWord.getText());
 
                     if (!done)
-                        JOptionPane.showMessageDialog( DeleteWord.this, "Word  Not Found. Please try again!","Delete Word", JOptionPane.INFORMATION_MESSAGE);
+                        JOptionPane.showMessageDialog( FunctionDelete.this, "Word  Not Found. Please try again!","Delete Word", JOptionPane.INFORMATION_MESSAGE);
                     else
-                        JOptionPane.showMessageDialog( DeleteWord.this, "Word  Deleted Successfully!","Delete Word", JOptionPane.INFORMATION_MESSAGE);
+                        JOptionPane.showMessageDialog( FunctionDelete.this, "Word  Deleted Successfully!","Delete Word", JOptionPane.INFORMATION_MESSAGE);
                 }
                 else
-                    JOptionPane.showMessageDialog( DeleteWord.this, "Please enter word from dictionary!","Add Word", JOptionPane.ERROR_MESSAGE);
+                    JOptionPane.showMessageDialog( FunctionDelete.this, "Please enter word from dictionary!","Add Word", JOptionPane.ERROR_MESSAGE);
             }
         });
         Container c = getContentPane();
@@ -33,6 +33,7 @@ public class DeleteWord extends JFrame {
         c.add( new JLabel("Word To Delete :"));
         c.add(tfWord);
         c.add( btnDelete);
+        c.setBackground(Color.MAGENTA);
         pack();
         show();
     }

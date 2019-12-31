@@ -4,16 +4,15 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.util.Vector;
 
-public class SearchWord extends JFrame {
+public class FunctionSearch extends JFrame {
     private JTextField tfWord;
     private JTextArea  taMeaning;
     JTextField tfNoun;
     JTextField tfVerb;
     JTextField tfTranscribe;
     private JButton btnSearch;
-    public SearchWord() {
+    public FunctionSearch() {
         super("Search Word");
 
         GridBagLayout gbl  = new GridBagLayout();
@@ -31,18 +30,18 @@ public class SearchWord extends JFrame {
                                          @Override
                                          public void actionPerformed(ActionEvent e) {
                                              if (  tfWord.getText().length() > 0 ) {
-                                                 MyVector<String> details = Dictionary.searchWord(tfWord.getText());//fix o day
+                                                 MyVector<String> details = Dictionary.searchWord(tfWord.getText());
                                                  if ( details.size() != 0){
-                                                     taMeaning.setText(String.valueOf(details.get(1)));//fix o day
-                                                 tfNoun.setText(String.valueOf(details.get(2)));//fix o day
-                                                 tfVerb.setText(String.valueOf(details.get(3)));//fix o day
-                                                 tfTranscribe.setText(String.valueOf(details.get(4)));//fix o day
+                                                     taMeaning.setText(String.valueOf(details.get(1)));
+                                                 tfNoun.setText(String.valueOf(details.get(2)));
+                                                 tfVerb.setText(String.valueOf(details.get(3)));
+                                                 tfTranscribe.setText(String.valueOf(details.get(4)));
                                                       }
                                                  else
-                                                     JOptionPane.showMessageDialog( SearchWord.this, "Word  Not Found. Please try again!","Search Word", JOptionPane.INFORMATION_MESSAGE);
+                                                     JOptionPane.showMessageDialog( FunctionSearch.this, "Word  Not Found. Please try again!","Search Word", JOptionPane.INFORMATION_MESSAGE);
                                              }
                                              else
-                                                 JOptionPane.showMessageDialog( SearchWord.this, "Please enter word from dictionary!","Search Word", JOptionPane.ERROR_MESSAGE);
+                                                 JOptionPane.showMessageDialog( FunctionSearch.this, "Please enter word from dictionary!","Search Word", JOptionPane.ERROR_MESSAGE);
                                          }
                                      }
         );
@@ -99,11 +98,12 @@ public class SearchWord extends JFrame {
         gbc.gridx = 1;
         gbc.gridy = 4;
         c.add(tfTranscribe,gbc);
+        c.setBackground(Color.yellow);
         show();
         pack(); // get requried size based on components
     }
 
     public static void main(String[] args) {
-        SearchWord searchWord = new SearchWord();
+        FunctionSearch searchWord = new FunctionSearch();
     }
 }

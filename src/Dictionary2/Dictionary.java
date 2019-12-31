@@ -18,7 +18,7 @@ public class Dictionary {
     static {
         // get currency directory
         dictionaryfile = System.getProperty("user.dir") +
-                "/dictionary.ser";
+                "/dictionary.txt";
     }
 
     public static boolean isModified() {
@@ -63,7 +63,6 @@ public class Dictionary {
     }
 
     public static boolean saveToDisk() {
-        // create file and save to disk
         try {
             FileOutputStream fs = new FileOutputStream(dictionaryfile);
             ObjectOutputStream os = new ObjectOutputStream(fs);
@@ -80,7 +79,7 @@ public class Dictionary {
     }
 
     public static boolean loadFromDisk() {
-        // read words from serialized treemap
+
         try {
             FileInputStream fs = new FileInputStream(dictionaryfile);
             ObjectInputStream is = new ObjectInputStream(fs);

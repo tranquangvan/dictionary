@@ -98,6 +98,7 @@ public class PlayGame extends JFrame {
                         JOptionPane.showMessageDialog(PlayGame.this, "Your answer is correct!", "Play Game", JOptionPane.INFORMATION_MESSAGE);
                         jTextField.setText("");
                         setVisible(false);
+
                     }
                 }
                 else {
@@ -111,6 +112,9 @@ public class PlayGame extends JFrame {
         jpMain.add(jp);
         jpMain.add(panel);
         jpMain.add(pn1);
+        jp.setBackground(Color.PINK);
+        jpMain.setBackground(Color.PINK);
+        jp1.setBackground(Color.PINK);
         add(jpMain);
         pack();
         show();
@@ -118,6 +122,7 @@ public class PlayGame extends JFrame {
     public static void main(String[] args) {
         PlayGame playGame = new PlayGame("Play Game Learn English ");
         playGame.setSize(500,500);
+
         playGame.setVisible(true);
     }
 }
